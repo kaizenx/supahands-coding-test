@@ -11,6 +11,7 @@ Injuries reduce stamina by 1.
 * A node can only be either hunted in once before exhausted, hunters cannot hunt in exhausted nodes. Hunting has a 10%(20% if solo) chance of causing injuries. An uninjured hunter has a 50%(60% if solo) chance of bagging a prey, an injured hunter has 30%.
 * A crippled (0 stamina) hunter can only travel to a new node or rest. 
 When the time unit runs out, they will get to the chopper and the hunt ends. (This doesn't need to be modeled)
+* FYI, the hunting map is provided in the source code as an adjacency matrix
 
 # Output
 The number of prey bagged, we're going to do a STDOUT test against an integer number to determine if the engineer has passed the test.
