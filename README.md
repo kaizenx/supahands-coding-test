@@ -1,7 +1,9 @@
 # supahands-coding-test
-This is the coding test for prospective supahands engineers. It is a modified traveling salesman problem.
+* This is the coding test for prospective supahands engineers. 
+* It is a modified traveling salesman problem using an undirected graph represented in code as an adjacency matrix in the variable hunting_map.
+* The adjacency matrix should not be changed.
 
-# Problem Statement
+## Problem Statement
 * Dutch and Dylan (D&D) have just met up at a jungle retreat to go on a hunt.
 * At a node, D&D can decide to either rest or hunt. D&D have stamina. Hunting, resting, and traveling to a new node consumes 1 time unit each. 
 * They start the hunt with 3 stamina, and resting returns 1-2 stamina
@@ -14,10 +16,10 @@ Injuries reduce stamina by 1.
 When the time unit runs out, they will get to the chopper and the hunt ends. (This doesn't need to be modeled)
 * FYI, the hunting map is provided in the source code as an adjacency matrix
 
-# Output
+## Output
 The number of prey bagged, we're going to do a STDOUT test against an integer number to determine if the engineer has passed the test.
 
-# Instructions
+## Instructions
 1. Clone this repo
 2. Solve the appropriate version of the test, be it python, ruby or js.
 3. Make a fork, and then create a PR for the fork when you are ready for answer submission!
