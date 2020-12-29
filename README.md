@@ -2,6 +2,7 @@
 * This is the coding test for prospective supahands engineers. 
 * It is a modified traveling salesman problem using an undirected graph represented in code as an adjacency matrix in the variable hunting_map.
 * The adjacency matrix should not be changed.
+* The number of time units should be 50, the code should be modified to take the number of time units as an integer input
 
 ## Problem Statement
 * Dutch and Dylan (D&D) have just met up at a jungle retreat to go on a hunt.
