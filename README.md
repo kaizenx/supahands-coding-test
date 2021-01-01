@@ -18,6 +18,8 @@
 * D&D can hunt together or split up, either way they have a 100% chance of bagging a boar.
 * However if they choose to split up, hunting consumes 2 stamina, but this allows D&D to bag 2 boars a turn.
 * FYI, the hunting map is provided in the source code as an adjacency matrix
+* Resting, hunting and moving from node to node consumes 1 turn, note that if D&D are moving separately, they do not each consume one turn.
+* I leave it up to your imagination how you should implement D&D moving separately, maybe there should be each turn D&D are allowed 1 action each? (Hint hint)
 
 ## Expected Solution
 * The solution should be object oriented, based on DRY and single responsibility principles.
