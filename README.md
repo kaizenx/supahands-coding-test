@@ -1,8 +1,8 @@
 # supahands-coding-test
 * This is the coding test for prospective supahands engineers. 
 * It is a modified traveling salesman problem using an undirected graph represented in code as an adjacency matrix in the variable hunting_map.
-* The adjacency matrix should not be changed.
-* The number of time units should be 50, the code should be modified to take the number of time units as an integer input
+* The matrix should not be changed.
+
 
 ## Problem Statement
 * Dutch and Dylan (D&D) have just met up at a jungle retreat to go on a hunt, they intend to hunt wild jungle boars.
@@ -24,12 +24,12 @@
 
 ## Expected Solution
 * The solution should be object oriented, based on DRY and single responsibility principles.
-* Expect to implement some kind of search, for example BFS
-* Note that BFS is probably not the best solution, maybe determine the shape of the matrix first? (Hint hint)
+* Expect to implement some kind of search or crawl
 * Provide comments in code to explain implementation
 
-## Output
-The number of boars bagged, we're going to do a STDOUT test against an integer number to determine if the engineer has passed the test.
+## Outputs
+* The number of boars bagged and the path of the hunt.
+* The path of the hunt in a single line, i.e. 'A B C D ...'
 
 ## Instructions
 1. Clone this repo
