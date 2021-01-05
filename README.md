@@ -1,6 +1,7 @@
 # supahands-coding-test
 * This is the coding test for prospective supahands engineers. 
-* It is a modified traveling salesman problem using an undirected graph represented in code as an adjacency matrix in the variable hunting_map.
+* It is a modified traveling salesman problem using a graph represented in code as an adjacency matrix in the variable hunting_map.
+* The matrix is unweighed.
 * The matrix should not be changed.
 
 
