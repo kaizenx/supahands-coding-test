@@ -29,6 +29,7 @@
 * Provide comments in code to explain implementation
 
 ## Outputs
+* The output should be in the format of an STDOUT (println to the terminal)
 * The number of boars bagged and the path of the hunt.
 * The path of the hunt in a single line, i.e. 'A B C D ...'
 
