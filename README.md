@@ -1,41 +1,49 @@
-# supahands-coding-test
-* This is the coding test for prospective supahands engineers. 
-* It is a modified traveling salesman problem using a graph represented in code as an adjacency matrix in the variable hunting_map.
-* The matrix is unweighed.
-* The matrix should not be changed.
 
+# Supahands Coding Challenge Write-up
 
-## Problem Statement
-* Dutch and Dylan (D&D) have just met up at a jungle retreat to go on a hunt, they intend to hunt wild jungle boars.
-* They pull out a map that represents the good hunting spots in the jungle that they are hunting in as nodes on a graph.
-* At a node, D&D can decide to either rest or hunt.
-* D&D need to rest during the hunt as hunting consumes stamina, D&D start with 3 stamina each. 
-* Resting returns 2 stamina, resting cannot bring stamina above 3.
-* Hunting at a node consumes 1 stamina, traveling from node to node consumes 1 stamina.
-* A hunter with 0 stamina cannot hunt, but can rest to recover stamina.
-* The graph is directed, D&D cannot traverse back and forth between nodes. D&D can either hunt together or split up. 
-* A node can be hunted in multiple times, however a node provides diminishing returns as it is hunted in.
-* A node starts with 3 boar, and each hunt will reduce the number of boar by 1, when the number of boars in a node reaches 0, no new boar can be hunted there.
-* D&D can hunt together or split up, either way they have a 100% chance of bagging a boar.
-* However if they choose to split up, hunting consumes 2 stamina, but this allows D&D to bag 2 boars a turn.
-* FYI, the hunting map is provided in the source code as an array, you probably want to convert it to a matrix of some sort.
-* Resting, hunting and moving from node to node consumes 1 turn, note that if D&D are moving separately, they do not each consume one turn.
-* I leave it up to your imagination how you should implement D&D moving separately, maybe there should be each turn D&D are allowed 1 action each? (Hint hint)
-* D&D end the hunt at node "K", at which they get to the choppa
+Hey Supahands! It's been a while.
 
-## Expected Solution
-* The solution should be object oriented, based on DRY and single responsibility principles.
-* Expect to implement some kind of search or crawl
-* Provide comments in code to explain implementation
+Not sure why I have to do a coding challenge when I'm applying for a DevOps role,
+but here's my submission and write-up.
 
-## Outputs
-* The output should be in the format of an STDOUT (println to the terminal)
-* The number of boars bagged and the path of the hunt.
-* The path of the hunt in a single line, i.e. 'A B C D ...'
+## Clarification
 
-## Instructions
-1. Clone this repo
-2. Solve the appropriate version of the test, be it in python, ruby or js.
-3. Make a fork, and then create a PR for the fork when you are ready for answer submission!
-4. Notify  [careers@supahands.com](mailto:careers@supahands.com) upon PR request with link to PR and demonstration of PR ownership.
+I believe that certain parts of the challenge requires more clarification:
+
+- Do the hunters need to start at a specific node?
+- Do the hunters have to traverse through all nodes?
+- Can the hunters split up and move into different zones?
+- What is the "solution" are we looking for?
+  Is it the path?
+  Or minimizing the number of turns?
+
+In the end, I decided to write solutions that can accomodate to different requirements.
+
+## First Naive Solution
+
+The solution in the file is a straight up naive solution.
+I am assuming that the hunters must move as a group, and allowed to split
+into their own paths.
+
+In this scenario, there are some nodes that the hunters won't be able to reach
+due to the nodes being arranged in a directed acyclic graph.
+
+Furthermore, since this is a multi agent path finding case, there are multiple methods
+or algorithms to solve it which usually requires extensive research.
+
+However, given our small test case (only 2 hunters and 11 nodes), we can implement a simple
+proof-of-concept brute force solution.
+
+## Second, Alternative More Complete Solution
+
+Below the first solution you will find a much more longer, complete code
+that covers several situation:
+
+- Optional for hunters to start at node A or any other nodes
+- Hunters can split into different paths
+- Hunters must traverse through all nodes
+- Able to compute for more than 2 hunters
+
+Although the code can compute for more than 2 hunters, the performance will suffers
+after the number of hunters are larger than 4 since it is a brute force implementation.
 
