@@ -1,6 +1,6 @@
 import unittest
 
-from main import Path, Node, path_crawler
+from main import path_crawler
 
 hunting_map = {
     'A': ['B', 'C', 'K'],
@@ -42,6 +42,7 @@ expected_paths = [
     ['A', 'C', 'H', 'F', 'J', 'K'],
     ['A', 'K']
 ]
+
 
 class PathCrawlerTest(unittest.TestCase):
     def setUp(self):
