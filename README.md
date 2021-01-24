@@ -1,3 +1,7 @@
+# TODO:
+1. Comments
+2. QOL stuffs
+
 # supahands-coding-test
 * This is the coding test for prospective supahands engineers. 
 * It is a modified traveling salesman problem using a graph represented in code as an adjacency matrix in the variable hunting_map.
