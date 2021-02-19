@@ -89,31 +89,30 @@ class Paths {
   getNodePathsArray () {
     return this.node_paths;
   }
+
+  getOptimumPath () {
+    let optimum_path = {
+      total_boars: 0,
+      node_path: []
+    };
+    this.node_paths.forEach(node_path => {
+      let total_boars = 0;
+      node_path.forEach(node => {
+        total_boars += node.getBoars();
+      })
+      if (total_boars > optimum_path.total_boars) {
+        optimum_path = {
+          total_boars,
+          node_path
+        }
+      }
+    });
+    return optimum_path.node_path;
+  }
 }
 
 var p = new Paths(hunting_map);
-console.log(p.getNodePathsArray());
-
-/** FIND THE OPTIMUM PATH
- * 1. Find the path the the greatest number of boars.
- */
-var optimum_path = {
-  boars: 0,
-  path: []
-}
-
-node_paths.forEach(path => {
-  total_boars = 0
-  path.forEach(node => {
-    total_boars += node.getBoars();
-  })
-  if (total_boars > optimum_path.boars) {
-    optimum_path = {
-      boars: total_boars,
-      path
-    }
-  }
-})
+console.log(p.getOptimumPath());
 
 class Player {
   
