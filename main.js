@@ -1,4 +1,13 @@
-// prey = 0
+/**
+ * INSTRUCTION ON RUNNING THE TEST:
+ * 
+ * When running the test, you can pass in one of the following command line arguments:
+ * 1) '-t' if you want Dylan & Dutch to hunt together (DEFAULT)
+ * 2) '-s' if you want Dylan & Dutch to hunt separately
+ * 
+ */
+
+
 hunting_map = {
   'A': ['B', 'C', 'K'],
   'B': ['D', 'E'],
