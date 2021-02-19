@@ -23,17 +23,17 @@ hunting_map = {
 };
 
 class Node {
-  constructor(id, name){
+  constructor (id, name) {
     this.id = id;
     this.name = name;
     this.boars = 3;
   };
 
-  getBoars(){
+  getBoars () {
     return this.boars;
   }
 
-  hunt(){
+  hunt () {
     // When a node is hunted, reduce the number of boars at the node.
     this.boars = this.boars - 1;
   }
