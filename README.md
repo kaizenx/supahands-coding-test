@@ -1,8 +1,17 @@
 # supahands-coding-test
+
+## Summary
 * This is the coding test for prospective supahands engineers. 
 * It is a modified traveling salesman problem using a graph represented in code as an adjacency matrix in the variable hunting_map.
 * The matrix is unweighed.
 * The matrix should not be changed.
+
+## Instructions
+1. Clone this repo
+2. Solve the appropriate version of the test, be it in python, ruby or js.
+3. Make a fork, and then create a PR for the fork when you are ready for answer submission!
+4. Notify  [careers@supahands.com](mailto:careers@supahands.com) upon PR request with link to PR and demonstration of PR ownership.
+5. In the event you are unfamiliar with this workflow, please refer to this [link](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 
 
 ## Problem Statement
@@ -33,9 +42,5 @@
 * The number of boars bagged and the path of the hunt.
 * The path of the hunt in a single line, i.e. 'A B C D ...'
 
-## Instructions
-1. Clone this repo
-2. Solve the appropriate version of the test, be it in python, ruby or js.
-3. Make a fork, and then create a PR for the fork when you are ready for answer submission!
-4. Notify  [careers@supahands.com](mailto:careers@supahands.com) upon PR request with link to PR and demonstration of PR ownership.
+
 
