@@ -1,3 +1,19 @@
+# Assumptions and clarifications
+* The solution is solved in python
+* The required output was simply the number of boars hunted and the path taken by the players
+    * I would like to point out that to give this output, I need only get a valid path in the map, and return that
+    * The number of boars I could print out as the number of nodes visited x 3 by assuming D&D wipe out all the local widlife at every node
+    * I obviously did not just do that, as I am assuming you want to see more than one function by me, so I went ahead and simulated the above mentioned hunting mechanics, even though the output is the same regardless
+* I assume the hunt always starts from node A
+* I have designed the logic assuming D&D are cold blooded killers and want to bag as much boar to their name as possible
+* While it isn't stated that they want to bag the most possible boars, the opposite has not been specified either, so I went ahead and used my head cannon
+* I have tried to make the design as robust as possible, by allowing easy logic changes to the game, but of course the base assumption is that only two players exist (although the program could be tweaked a teenie bit to accommodate that)
+* And yes I know you're supposed to make regular commits to your repository and its good practice and you're probably judging me for the one commit but I am aware of that
+* I am also aware that you generally want to branch and merge to master
+* This is a one time thing on a relatively small project with only me working on it, so that is why I'm pushing one commit directly to master. Please don't judge my committing practices based on this :pleading_face:
+
+
+
 # supahands-coding-test
 
 ## Summary
