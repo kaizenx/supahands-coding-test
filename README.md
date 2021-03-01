@@ -1,3 +1,21 @@
+# How to run
+```sh
+# Main program
+python3 main.py
+
+# Alternatively, if there's too many to read:
+python3 main.py --first
+```
+
+# Assumptions made
+1. The graph provided is a Directed Acylic Graph and will always terminate. Therefore, I used a  simple recursive approach to get all the possible paths and converted it into a Linked List. This allows for simpler traversal and handling of the hunting simulations. That said, if the graph is changed to one that has cycles, it will break the crawler since the recursion would never end.
+
+2. Regarding hunting ..
+> A node can be hunted in multiple times
+>
+> this allows D&D to bag 2 boars a turn
+
+Since this implies that a node can only be hunted at at most _once_, I've implemented divide and conquer strategy for the Hunters. Meaning, they will never hunt together on the same node. This, however, makes it take way more turns than necessary for the shortest path of [A -> K] since one person will board the chopper and not assist the other Hunter.
 # supahands-coding-test
 
 ## Summary
