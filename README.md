@@ -1,7 +1,7 @@
 # supahands-coding-test
 
 ## Summary
-This is a solution for Supahands [coding test](https://github.com/kaizenx/supahands-coding-test).
+This is a solution for Supahands [coding test](https://github.com/kaizenx/supahands-coding-test) developed on a Windows machine running Python 3.8.x.
 
 ## Instructions
 1. Clone the repository
