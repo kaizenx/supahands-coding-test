@@ -1,3 +1,6 @@
+
+const SimulatedAnnealing = require('./SimulatedAnnealing')
+
 prey = 0
 hunting_map = {
   'A': ['B', 'C', 'K'],
