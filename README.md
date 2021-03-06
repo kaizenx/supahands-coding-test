@@ -14,7 +14,7 @@ Throughout the solution, there are a few assumptions being made
 * D&D can choose to hunt separately at a same node, given they have enough stamina
 
 ## Optional Arguments
-| Parameter | Description |
+| Argument | Description |
 | :--- | :--- |
 | --json [path]   | dumps results into a json file (`dump.json` if path is not specified) |
 | -h, --help | show help message and exit |
