@@ -1,0 +1,19 @@
+{
+  "name": "supahands-coding-test",
+  "version": "1.0.0",
+  "description": "Supahands Coding Test",
+  "main": "main.js",
+  "scripts": {
+    "dev" : "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-cheechongtey:cheechongtey/supahands-coding-test.git"
+  },
+  "author": "Chee Chong",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
