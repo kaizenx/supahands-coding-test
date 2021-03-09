@@ -3,7 +3,7 @@
  * @author ammar kalifa
  * @since 04-03-2021
  * this class for implement D&D Algorithem on js OOP
- * converte hunting map to class 
+ * converte hunting map to class .
  */
 class HuntingMap {
     constructor() {
